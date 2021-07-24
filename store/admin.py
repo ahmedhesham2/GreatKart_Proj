@@ -4,7 +4,7 @@ from store.models import product
 
 
 class productAdmin(admin.ModelAdmin):
-    list_display = ('product_name', 'price', 'stock', 'category', 'modified_date', 'is_available',)
+    list_display = ('product_name','slug', 'price', 'stock', 'category', 'modified_date', 'is_available',)
     prepopulated_fields = {'slug': ('product_name',)}
 
 # Register your models here.
